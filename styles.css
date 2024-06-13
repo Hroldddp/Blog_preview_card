@@ -1,0 +1,107 @@
+/* 
+
+# Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+# Font
+
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 500, 800
+
+font-size: (paragraph): 16px
+
+# Colors
+
+color: hsl(47, 88%, 63%);
+color: hsl(0, 0%, 100%);
+color: hsl(0, 0%, 50%);
+color: hsl(0, 0%, 7%);
+
+*/
+
+@font-face {
+    font-family: Figtree;
+    src: url(font/static/Figtree-Regular.ttf);
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+
+    font-family: Figtree;
+    font-size: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body svg {
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+}
+
+.contents {
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 20px;
+    box-shadow: 10px 10px hsl(0, 0%, 0%);
+
+    margin: 100px;
+    padding: 30px;
+    width: 340px;
+    height: 500px;
+}
+
+.contents .texts {
+    color: hsl(0, 0%, 50%); 
+}
+
+.box {
+    background-color:hsl(47, 88%, 63%);
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 5px;
+    width: 20%;
+}
+
+.box, .bold, .avatar {
+    font-weight: 800;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.avatar img {
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 50%;
+
+    width: 30px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
